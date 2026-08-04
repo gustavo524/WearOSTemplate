@@ -56,21 +56,22 @@
         android:textColor="#CCCCCC"
         android:textSize="14sp" />
 
+    <!-- Botão parar -->
+
     <Button
         android:id="@+id/btnPerfil"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
+        android:layout_width="73dp"
+        android:layout_height="59dp"
         android:layout_marginTop="16dp"
-        android:text="PERFIL"/>
+        android:text="PERFIL" />
 
-    <!-- Botão parar -->
     <Button
         android:id="@+id/btnStop"
-        android:layout_width="120dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:backgroundTint="#D32F2F"
-        android:text="PARAR"
+        android:text="❚❚"
         android:textColor="#FFFFFF" />
 
     <Button

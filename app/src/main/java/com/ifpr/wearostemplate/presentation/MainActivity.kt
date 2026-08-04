@@ -9,9 +9,6 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.ifpr.wearostemplate.R
-import android.content.Intent
-import android.widget.Button
-import com.ifpr.wearostemplate.PerfilActivity
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,16 +19,6 @@ class MainActivity : ComponentActivity() {
         setTheme(android.R.style.Theme_DeviceDefault)
 
         setContentView(R.layout.activity_main)
-
-        val btnPerfil = findViewById<Button>(R.id.btnPerfil)
-
-        btnPerfil.setOnClickListener {
-
-            val intent = Intent(this, PerfilActivity::class.java)
-
-            startActivity(intent)
-
-        }
     }
 }
 

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,15 +19,7 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
-    <!-- Botão principal -->
-    <Button
-        android:id="@+id/btnPlay"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:backgroundTint="#A8FF2A"
-        android:text="▶"
-        android:textColor="#000000"
-        android:textSize="28sp" />
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -37,33 +30,80 @@
         android:textSize="12sp"
         android:textStyle="bold" />
 
-    <!-- Informações -->
-    <TextView
-        android:id="@+id/txtTempo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Tempo: 00:00"
-        android:textColor="#CCCCCC"
-        android:textSize="14sp" />
 
-    <TextView
-        android:id="@+id/txtDistancia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Distância: 0,00 km"
-        android:textColor="#CCCCCC"
-        android:textSize="14sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
 
-    <!-- Botão parar -->
 
+
+        <TextView
+            android:id="@+id/txtTempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tempo"
+            android:textSize="12sp"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/txtDistancia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00 km"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distância"
+            android:textSize="12sp"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/txtRitmo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-- min/km"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ritmo médio"
+            android:textSize="12sp"
+            android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perfil"
+            android:layout_marginTop="8dp"/>
+
+    <!-- Botão principal -->
     <Button
-        android:id="@+id/btnPerfil"
-        android:layout_width="73dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="16dp"
-        android:text="PERFIL" />
+        android:id="@+id/btnPlay"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#A8FF2A"
+        android:text="▶"
+        android:textColor="#000000"
+        android:textSize="28sp" />
 
     <Button
         android:id="@+id/btnStop"
@@ -73,13 +113,5 @@
         android:backgroundTint="#D32F2F"
         android:text="❚❚"
         android:textColor="#FFFFFF" />
-
-    <Button
-        android:id="@+id/btnPerfil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Perfil"
-        android:layout_marginStart="8dp"/>
-
-
 </LinearLayout>
+

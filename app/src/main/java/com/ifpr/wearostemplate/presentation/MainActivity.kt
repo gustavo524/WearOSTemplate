@@ -1,10 +1,10 @@
 package com.ifpr.wearostemplate.presentation
 
-import android.os.Bundle
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.Location
+import android.os.Bundle
 import android.os.SystemClock
 import android.widget.Button
 import android.widget.TextView
@@ -13,7 +13,6 @@ import androidx.activity.ComponentActivity
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import com.ifpr.wearostemplate.R
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationCallback
 import com.google.android.gms.location.LocationRequest
@@ -21,6 +20,7 @@ import com.google.android.gms.location.LocationResult
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.location.Priority
 import com.google.firebase.database.FirebaseDatabase
+import com.ifpr.wearostemplate.R
 import com.ifpr.wearostemplate.presentation.baseclasses.Corrida
 import java.util.Locale
 
@@ -127,8 +127,6 @@ class MainActivity : ComponentActivity() {
         setTheme(android.R.style.Theme_DeviceDefault)
 
         setContentView(R.layout.activity_main)
-    }
-}
 
         // -----------------------------------------------------
         // COMPONENTES
@@ -138,7 +136,7 @@ class MainActivity : ComponentActivity() {
         txtDistancia = findViewById(R.id.txtDistancia)
         txtRitmo = findViewById(R.id.txtRitmo)
 
-        btnStart = findViewById(R.id.btnStart)
+        btnStart = findViewById(R.id.btnPlay)
         btnStop = findViewById(R.id.btnStop)
         btnPerfil = findViewById(R.id.btnPerfil)
 
